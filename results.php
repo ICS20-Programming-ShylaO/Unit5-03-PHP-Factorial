@@ -9,7 +9,7 @@ $response = "";
 // response for when user does not enter an integer
 if (!is_numeric($integer)) {
     echo "Please enter a valid integer.";
-} 
+}
 
 elseif ($integer == 0) {
     echo "0! --> 1 = 1";
@@ -31,7 +31,7 @@ else {
         // decrement the counter by one
         $counter--;
     } while ($counter >= 1);
-  
+
     // display answer to user
     echo "!" . $integer . " --> " . $response . " = " . $factorial;
 }
