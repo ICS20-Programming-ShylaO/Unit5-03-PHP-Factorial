@@ -12,7 +12,7 @@ if (!is_numeric($integer)) {
 }
 
 elseif ($integer == 0) {
-  echo "0! --> 1 = 1";
+    echo "0! --> 1 = 1";
 }
 
 // else for when user enters valid input
@@ -20,18 +20,18 @@ else {
     // do...while loop to calculate the factorial using repeated multiplication
     do {
       // setting factorial to itself times the counter to create a loop of repeated multiplication
-      $factorial = $factorial * $counter;
+        $factorial = $factorial * $counter;
       // build the response by using the empty string and adding the factorial with the original integer
-      if ($counter == $integer) {
-        $response = $response . $counter;
-      } 
-      else {
-        $response = $response . " x " . $counter;
-      }
-      // decrement the counter by one
-      $counter--;
+        if ($counter == $integer) {
+          $response = $response . $counter;
+        }
+        else {
+          $response = $response . " x " . $counter;
+        }
+        // decrement the counter by one
+        $counter--;
     } while ($counter >= 1);
   
-// display answer to user
+    // display answer to user
     echo "!" . $integer . " --> " . $response . " = " . $factorial;
-  }
+}
